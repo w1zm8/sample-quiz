@@ -4,7 +4,7 @@ import { NoteType } from "./types";
 import Note from "./Note";
 import { STORAGE_NOTES_KEY } from "./constants";
 
-type State = {
+export type State = {
   text: string;
   notes: NoteType[];
 };
