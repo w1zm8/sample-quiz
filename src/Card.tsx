@@ -11,10 +11,6 @@ type State = {
   isShown: boolean;
 };
 
-const FieldContent = styled.div`
-  text-align: center;
-`;
-
 class CardView extends React.Component<Props, State> {
   state = {
     isShown: false

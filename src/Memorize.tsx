@@ -8,6 +8,7 @@ const Anki: React.FC = () => (
     <p>kind of Anki</p>
     <DeckList />
     <br />
+    <NavLink to="/deck-control" label="🗃️ Deck Control" />
     <NavLink to="/" label="🏠 Home" />
   </>
 );

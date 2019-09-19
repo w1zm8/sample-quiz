@@ -5,6 +5,7 @@ import Home from "./Home";
 import Notes from "./Notes";
 import Memorize from "./Memorize";
 import Deck from "./Deck";
+import DeckControl from "./DeckControl";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ const App: React.FC = () => (
         <Route path="/notes" component={Notes} />
         <Route path="/memorize" component={Memorize} />
         <Route path="/deck" component={Deck} />
+        <Route path="/deck-control" component={DeckControl} />
       </Switch>
     </Box>
   </Grommet>
