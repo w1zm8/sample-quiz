@@ -2,11 +2,11 @@ import React from "react";
 import { Box } from "grommet";
 import { Card } from "./types";
 
-type Props = {
+export type Props = {
   card: Card;
 };
 
-type State = {
+export type State = {
   isShown: boolean;
 };
 
