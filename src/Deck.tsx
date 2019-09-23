@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Box } from "grommet";
 import NavLink from "./NavLink";
 import { RootStore, DeckStore } from "./types";
-import { getDeck } from "./reducers";
+import { getDeck } from "./reducers/deck";
 import Card from "./Card";
 
 type StateProps = {

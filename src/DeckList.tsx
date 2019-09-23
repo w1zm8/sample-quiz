@@ -10,7 +10,7 @@ import {
   loadDecks,
   LoadDecksActionCreator
 } from "./actions";
-import { getDecks } from "./reducers";
+import { getDecks } from "./reducers/decks";
 import { Deck, RootStore } from "./types";
 
 type DispatchProps = {

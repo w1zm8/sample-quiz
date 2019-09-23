@@ -6,6 +6,7 @@ const Home: React.FC = () => (
   <Box direction="column">
     <NavLink to="/notes" label="📝 Notes" />
     <NavLink to="/memorize" label="🤔 Memorize" />
+    <NavLink to="/quiz" label="🌟 Quiz" />
   </Box>
 );
 

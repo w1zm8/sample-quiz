@@ -1,28 +1,14 @@
 import {
-  SET_DECK,
-  LOAD_DECKS,
-  ADD_DECK,
-  SetDeckAction,
-  LoadDecksAction,
-  AddDeckAction
-} from "./actionTypes";
-import { Deck } from "../types";
+  SetDeckActionCreator,
+  LoadDecksActionCreator,
+  AddDeckActionCreator
+} from "./memorize";
+import { FetchCategoriesActionCreator } from "./quiz";
 
-export type SetDeckActionCreator = (payload: Deck) => SetDeckAction;
-export type LoadDecksActionCreator = (payload: Deck[]) => LoadDecksAction;
-export type AddDeckActionCreator = (payload: Deck) => AddDeckAction;
+export { setDeck, loadDecks, addDeck } from "./memorize";
+export { fetchCategories } from "./quiz";
 
-export const setDeck: SetDeckActionCreator = payload => ({
-  type: SET_DECK,
-  payload
-});
-
-export const loadDecks: LoadDecksActionCreator = payload => ({
-  type: LOAD_DECKS,
-  payload
-});
-
-export const addDeck: AddDeckActionCreator = payload => ({
-  type: ADD_DECK,
-  payload
-});
+export type SetDeckActionCreator = SetDeckActionCreator;
+export type LoadDecksActionCreator = LoadDecksActionCreator;
+export type AddDeckActionCreator = AddDeckActionCreator;
+export type FetchCategoriesActionCreator = FetchCategoriesActionCreator;
